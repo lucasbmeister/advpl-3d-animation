@@ -1,13 +1,11 @@
 #include 'totvs.ch'
 
-//-------------------------------------------------------------------
-/*/{Protheus.doc} Class RotatingCube
+/*{Protheus.doc} Class RotatingCube
 Classe com lógica da rotação do cubo
 @author  Lucas Briesemeister
 @since   01/2021
 @version 12.1.27
-/*/
-//-------------------------------------------------------------------
+*/
 Class RotatingCube From BaseGameObject
     
     Data oPanel
@@ -18,14 +16,12 @@ Class RotatingCube From BaseGameObject
 
 EndClass
 
-//-------------------------------------------------------------------
-/*/{Protheus.doc} Method New(oWindow) Class RotatingCube
+/*{Protheus.doc} Method New(oWindow) Class RotatingCube
 Instância classe do cubo com a lógica de rotação
 @author  Lucas Briesemeister
 @since   01/2021
 @version 12.1.27
-/*/
-//-------------------------------------------------------------------
+*/
 Method New(oWindow) Class RotatingCube
 
     _Super:New(oWindow)
@@ -36,14 +32,12 @@ Method New(oWindow) Class RotatingCube
 
 Return Self
 
-//-------------------------------------------------------------------
-/*/{Protheus.doc} Method Update(oGame) Class RotatingCube
+/*{Protheus.doc} Method Update(oGame) Class RotatingCube
 Atualiza frame do cubo
 @author  Lucas Briesemeister
 @since   01/2021
 @version 12.1.27
-/*/
-//-------------------------------------------------------------------
+*/
 Method Update(oGame) Class RotatingCube
 
     Local aVertices as array
@@ -100,14 +94,12 @@ Method Update(oGame) Class RotatingCube
 
 Return
 
-//-------------------------------------------------------------------
-/*/{Protheus.doc} Class Point2D
+/*{Protheus.doc} Class Point2D
 Classse que representa um ponto em duas dimensões no painel
 @author  Lucas Briesemeister
 @since   01/2021
 @version 12.1.27
-/*/
-//-------------------------------------------------------------------
+*/
 Class Point2D
     
     Data nX
@@ -117,14 +109,12 @@ Class Point2D
 
 EndClass
 
-//-------------------------------------------------------------------
-/*/{Protheus.doc} Method New(nX, nY) Class Point2D
+/*{Protheus.doc} Method New(nX, nY) Class Point2D
 Instância a classe de ponto2d
 @author  Lucas Briesemeister
 @since   01/2021
 @version 12.1.27
-/*/
-//-------------------------------------------------------------------
+*/
 Method New(nX, nY) Class Point2D
 
     ::nX := nX
@@ -132,14 +122,12 @@ Method New(nX, nY) Class Point2D
 
 Return Self
 
-//-------------------------------------------------------------------
-/*/{Protheus.doc} Class Point3D
+/*{Protheus.doc} Class Point3D
 Classe que representa um ponto em 3d dimensões no painel
 @author  Lucas Briesemeister
 @since   01/2021
 @version 12.1.27
-/*/
-//-------------------------------------------------------------------
+*/
 Class Point3D
 
     Data nX
@@ -150,14 +138,12 @@ Class Point3D
 
 EndClass
 
-//-------------------------------------------------------------------
-/*/{Protheus.doc} Method New(nX, nY, nZ) Class Point3
+/*{Protheus.doc} Method New(nX, nY, nZ) Class Point3
 Instância classe do ponto 3d
 @author  Lucas Briesemeister
 @since   01/2021
 @version 12.1.27
-/*/
-//-------------------------------------------------------------------
+*/
 Method New(nX, nY, nZ) Class Point3D
 
     ::nX := nX
@@ -166,14 +152,12 @@ Method New(nX, nY, nZ) Class Point3D
 
 Return Self
 
-//-------------------------------------------------------------------
-/*/{Protheus.doc} Class Cube
+/*{Protheus.doc} Class Cube
 Classe que contém as infomrações para construção de um cubo
 @author  Lucas Briesemeister
 @since   01/2021
 @version 12.1.27
-/*/
-//-------------------------------------------------------------------
+*/
 Class Cube
 
     Data aVertices
@@ -189,14 +173,12 @@ Class Cube
 
 EndClass
 
-//-------------------------------------------------------------------
-/*/{Protheus.doc} Method New(nX, nY, nZ, nSize) Class Cube
+/*{Protheus.doc} Method New(nX, nY, nZ, nSize) Class Cube
 Instância o cubo
 @author  Lucas Briesemeister
 @since   01/2021
 @version 12.1.27
-/*/
-//-------------------------------------------------------------------
+*/
 Method New(nX, nY, nZ, nSize) Class Cube
 
     ::nX := nX
@@ -227,14 +209,12 @@ Method New(nX, nY, nZ, nSize) Class Cube
 
 Return Self
 
-//-------------------------------------------------------------------
-/*/{Protheus.doc} Method RotateX(nRadian) Class Cube
+/*{Protheus.doc} Method RotateX(nRadian) Class Cube
 Rotaciona o cubo no eixo X
 @author  Lucas Briesemeister
 @since   01/2021
 @version 12.1.27
-/*/
-//-------------------------------------------------------------------
+*/
 Method RotateX(nRadian) Class Cube
 
     Local nCosine as numeric
@@ -261,14 +241,12 @@ Method RotateX(nRadian) Class Cube
 
 Return
 
-//-------------------------------------------------------------------
-/*/{Protheus.doc} Method RotateY(nRadian) Class Cube
+/*{Protheus.doc} Method RotateY(nRadian) Class Cube
 Rotaciona o cubo no eixo Y
 @author  Lucas Briesemeister
 @since   01/2021
 @version 12.1.27
-/*/
-//-------------------------------------------------------------------
+*/
 Method RotateY(nRadian) Class Cube
 
     Local nCosine as numeric
@@ -295,14 +273,12 @@ Method RotateY(nRadian) Class Cube
 
 Return
 
-//-------------------------------------------------------------------
-/*/{Protheus.doc} Static Function Project(aPoints3D, nWidth, nHeight)
+/*{Protheus.doc} Static Function Project(aPoints3D, nWidth, nHeight)
 Realiza a projeção dos pontos 3D do cubo em um painel de 2 dimensões
 @author  Lucas Briesemeister
 @since   01/2021
 @version 12.1.27
-/*/
-//-------------------------------------------------------------------
+*/
 Static Function Project(aPoints3D, nWidth, nHeight)
 
     Local aPoints2D as array

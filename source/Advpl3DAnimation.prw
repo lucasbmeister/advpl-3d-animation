@@ -1,14 +1,12 @@
 #include 'totvs.ch'
 #include 'gameadvpl.ch'
 
-//-------------------------------------------------------------------
-/*/{Protheus.doc} Main Function Animation3D()
+/*{Protheus.doc} Main Function Animation3D()
 Realiza a rotação de um cubo 3d
 @author  Lucas Briesemeister
 @since   01/2021
 @version 12.1.27
-/*/
-//-------------------------------------------------------------------
+*/
 Main Function Animation3D()
     Local oGame as object
     Local oMenu as object
@@ -35,14 +33,12 @@ Main Function Animation3D()
     oGame:Start(oCubeScene:GetSceneID())
 
 Return
-//-------------------------------------------------------------------
-/*/{Protheus.doc} Static FUnction LoadCube(oLevel, oGame)
+/*{Protheus.doc} Static FUnction LoadCube(oLevel, oGame)
 Carrega cena do cubo
 @author  Lucas Briesemeister
 @since   01/2021
 @version 12.1.27
-/*/
-//-------------------------------------------------------------------
+*/
 Static FUnction LoadCube(oLevel, oGame)
 
     Local oWindow as object
