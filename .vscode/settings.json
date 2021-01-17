@@ -1,0 +1,45 @@
+{
+    "advpl.workspaceFolders": "c:\\@git\\advpl-3d-animation;",
+    "advpl.selectedEnvironment": "TOTVSLG",
+	"totvsLanguageServer.welcomePage": false,
+    "advpl.debug_multiThread": true,
+    "search.usePCRE2": true,
+    "advpl.environments": [
+        {
+            "name": "TOTVSLG",
+            "environment": "TOTVSLG",
+            "server": "localhost",
+            "port": "4500",
+            "user": "Admin",
+            "serverVersion": "191205P",
+            "passwordCipher": "LWlb3ughX7D+aolMqARzsZcgKsMFmrsgZElo1kHNaC1tdZcsunIDxneAigIr4lbpAACqV+f+WfJOvjot0BsCIyJL=",
+            "smartClientPath": "C:\\@totvs-bases\\protheus_12_1_27\\bin\\smartclient",
+            "includeList": "c:\\@totvs-bases\\includes\\",
+            "enable": true,
+            "ssl": true
+        },
+        {
+            "environment": "UBS",
+            "name": "UBS",
+            "server": "localhost",
+            "port": "2901",
+            "serverVersion": "191205P",
+            "passwordCipher": "dwQOSnNmVljQXAnrHgJuIYe2ZXnvwEXmAkV7TPs+DqmAVBd2utlP1jXSPKqvqGXqAARxIKgGe5IhkXe1yGELYa0l=",
+            "includeList": "c:\\@totvs-bases\\includes\\",
+            "user": "admin",
+            "smartClientPath": "c:\\@totvs-bases\\ubs\\tec\\smartclient\\",
+            "enable": true,
+            "ssl": true
+        },
+    ],
+    "files.associations": {
+        "xutility": "cpp",
+        "vector": "cpp",
+        "initializer_list": "cpp",
+        "type_traits": "cpp"
+    },
+    "advpl.authorization_generation": "20201112",
+    "advpl.authorization_validation": "20210210",
+    "advpl.authorization_permission": "1",
+    "advpl.authorization_code": "016XUC030GQCG74A1E7671282"
+}
